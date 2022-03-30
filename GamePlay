@@ -1,0 +1,31 @@
+import java.util.*;
+
+class GamePlay {
+    
+    
+
+    
+
+    void gaming(){
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Try the operations for the input to get the following reultant value : ");
+        int choice = sc.nextInt();
+        switch(choice){
+            case 1:
+               
+        }
+    }
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter the resultant value : ");
+        int resultantValue = sc.nextInt();
+        System.out.println("Enter the four input values : ");
+        int n1 = sc.nextInt();
+        int n2 = sc.nextInt();
+        int n3 = sc.nextInt();
+        int n4 = sc.nextInt();
+    
+        
+    }
+}

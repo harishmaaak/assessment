@@ -1,0 +1,48 @@
+import java.util.Scanner;
+
+interface Registration {
+    String name();
+
+    String location();
+
+    int rentAmount();
+
+    double phoneNo();
+}
+
+public class Owner implements Registration {
+    Scanner sc = new Scanner(System.in);
+    public String name(){
+        System.out.println("Enter the owner's name : ");
+        String name = sc.nextLine();
+        return name;
+    }
+
+    public String location(){
+        System.out.println("Enter the house location : ");
+        String location = sc.nextLine();
+        return location;
+    }
+
+    public int rentAmount(){
+        System.out.println("Enter the rent of house : ");
+        int amount = sc.nextInt();
+        return amount;
+    }
+
+    public double phoneNo(){
+        System.out.println("Enter the mobile no : ");
+        double phoneNo = sc.nextDouble();
+        return phoneNo;
+    }
+
+    public static void main(String[] args){
+        Owner owner = new Owner();
+        Registration obj = owner;
+        obj.name();
+        obj.location();
+        obj.rentAmount();
+        obj.phoneNo();
+    }
+
+}
